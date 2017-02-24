@@ -1,0 +1,33 @@
+{
+  "name": "chiakirun",
+  "version": "1.0.0",
+  "description": "npm-scripts taskrunner",
+  "main": "index.html",
+  "scripts": {
+    "start": "npm run sync & npm run css:watch",
+    "css:build": "postcss --config .postcssrc.json --dir ./dist/css/ ./develop/postcss/common.css",
+    "css:watch": "postcss --config .postcssrc.json --dir ./develop/css/ ./develop/postcss/common.css -w --map",
+    "sync": "browser-sync start --server ./develop/ --files='./develop/**/*.*'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chiilog/chiakirun.git"
+  },
+  "author": "Chiaki",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/chiilog/chiakirun/issues"
+  },
+  "homepage": "https://github.com/chiilog/chiakirun#readme",
+  "devDependencies": {
+    "autoprefixer": "^6.6.1",
+    "browser-sync": "^2.18.6",
+    "cssnano": "^3.10.0",
+    "postcss-cli": "^2.6.0",
+    "postcss-custom-media": "^5.0.1",
+    "postcss-custom-properties": "^5.0.1",
+    "postcss-import": "^9.1.0",
+    "postcss-nested": "^1.0.0",
+    "watch": "^1.0.1"
+  }
+}
