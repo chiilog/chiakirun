@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+<% if( typeof title !== 'undefined' ) { -%>
+	<title><%= title %></title>
+<% } else { -%>
+	<title>ページに title を入れなかった時のtitle要素</title>
+<% } -%>
+<% if( typeof meta_description !== 'undefined' ) { %>
+	<meta name="description" content="<%= meta_description %>">
+<% } -%>
+<% if( typeof meta_keywords !== 'undefined' ) { -%>
+	<meta name="keywords" content="<%= meta_keywords %>">
+<% } -%>
+
+	<meta name="viewport" content="width=device-width">
+	<meta name="format-detection" content="telephone=no">
+
+	<link rel="stylesheet" href="css/common.css">
+</head>
+<body>

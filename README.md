@@ -10,5 +10,5 @@ npm-scriptsを使ったタスクランナーを作る練習。名前思いつか
 * ブラウザシンク
 
 ## 履歴
-* 2017.02.24 postcss-custom-media 追加、リポジトリ移動
+* 2017.02.25 postcss-custom-media 追加、リポジトリ移動、postcss-cli v3-betaに対応
 * 2017.01.17 first commit
