@@ -11,6 +11,7 @@ npm-scriptsを使ったタスクランナーを作る練習。名前思いつか
 * ブラウザシンク
 
 ## 履歴
+* 2017.06.03 package update.
 * 2017.03.13 ejs削除。postcss-color-function 追加
 * 2017.02.25 postcss-custom-media 追加、リポジトリ移動、postcss-cli v3-betaに対応
 * 2017.01.17 first commit

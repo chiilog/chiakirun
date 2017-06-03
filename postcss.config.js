@@ -6,7 +6,7 @@ module.exports = {
 		require('postcss-color-function')({}),
 		require('postcss-custom-media')({}),
 		require('autoprefixer')({
-			browsers: 'last 2 versions, ie 9'
+			browsers: 'last 2 versions, ie 11'
 		}),
 		require('cssnano')({})
 	]
