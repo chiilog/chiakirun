@@ -1,39 +1,32 @@
 {
-  "name": "chiakirun",
+  "name": "maxim_runner",
   "version": "1.0.0",
   "description": "npm-scripts taskrunner",
   "main": "index.html",
-  "config": {
-    "css_output_path": "./develop/css",
-    "css_input_path": "./develop/postcss"
-  },
   "scripts": {
-    "start": "npm run sync & npm run css:watch",
-    "css:build": "postcss -c ./postcss.config.js ./develop/postcss/common.css -o ./dist/css/common.css",
-    "css:watch": "postcss -c ./postcss.config.js -d $npm_package_config_css_output_path/ $npm_package_config_css_input_path/common.css -w",
-    "sync": "browser-sync start --server ./develop/ --files='./develop/**/*.*'"
+    "start": "parallelshell \"npm run sync\" \"npm run css:watch\"",
+    "css:watch": "postcss ./develop/postcss/*.css -d ./develop/css/ -w",
+    "sync": "browser-sync start --server ./develop --files \"./develop/**/*.*\""
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/chiilog/chiakirun.git"
-  },
-  "author": "Chiaki",
+  "author": "Obara Chiaki",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/chiilog/chiakirun/issues"
-  },
-  "homepage": "https://github.com/chiilog/chiakirun#readme",
   "devDependencies": {
-    "autoprefixer": "^7.1.1",
+    "autoprefixer": "^7.1.2",
     "browser-sync": "^2.18.12",
     "cssnano": "^3.10.0",
-    "postcss-cli": "^4.0.0",
+    "parallelshell": "^3.0.1",
+    "postcss-cli": "^4.1.0",
     "postcss-color-function": "^4.0.0",
     "postcss-custom-media": "^6.0.0",
-    "postcss-custom-properties": "^6.0.1",
+    "postcss-custom-properties": "^6.1.0",
+    "postcss-extend": "^1.0.5",
     "postcss-import": "^10.0.0",
     "postcss-load-config": "^1.2.0",
-    "postcss-nested": "^2.0.2",
+    "postcss-mixins": "^6.0.1",
+    "postcss-nested": "^2.0.3",
+    "postcss-reporter": "^4.0.0",
+    "stylelint": "^8.0.0",
+    "stylelint-config-standard": "^17.0.0",
     "watch": "^1.0.2"
   }
 }
