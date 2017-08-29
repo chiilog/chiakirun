@@ -12,6 +12,8 @@ Windowsでも使っているので使えるはずです。
 * ブラウザシンク
 
 ## CHANGELOG
+* 2017.08.29 cssnano changed to csswring.
+* 2017.08.29 postcss-reporter added.
 * 2017.07.21 node update to v6.11.1, StyleLint added.
 * 2017.06.03 package update.
 * 2017.03.13 delete ejs, postcss-color-function added.

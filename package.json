@@ -13,7 +13,7 @@
   "devDependencies": {
     "autoprefixer": "^7.1.2",
     "browser-sync": "^2.18.12",
-    "cssnano": "^3.10.0",
+    "csswring": "^6.0.1",
     "parallelshell": "^3.0.1",
     "postcss-cli": "^4.1.0",
     "postcss-color-function": "^4.0.0",
@@ -24,7 +24,7 @@
     "postcss-load-config": "^1.2.0",
     "postcss-mixins": "^6.0.1",
     "postcss-nested": "^2.0.3",
-    "postcss-reporter": "^4.0.0",
+    "postcss-reporter": "^5.0.0",
     "stylelint": "^8.0.0",
     "stylelint-config-standard": "^17.0.0",
     "watch": "^1.0.2"
