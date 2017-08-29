@@ -15,6 +15,6 @@ module.exports = {
 		require('autoprefixer')({
 			browsers: 'Android >= 4.4, iOS >= 10, ie >= 11, last 2 versions'
 		}),
-		require('cssnano')({})
+		require('csswring')({})
 	]
 }
