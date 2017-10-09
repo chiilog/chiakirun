@@ -12,6 +12,7 @@ Windowsでも使っているので使えるはずです。
 * ブラウザシンク
 
 ## CHANGELOG
+* 2017.10.09 package update.
 * 2017.08.29 package update.
 * 2017.08.29 cssnano changed to csswring.
 * 2017.08.29 postcss-reporter added.
